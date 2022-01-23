@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <script
+      src="https://kit.fontawesome.com/5ca4e257b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/animacion-index.css" />
+    <link rel="stylesheet" href="/styles/barra-scroll.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/experiencia.css" />
+    <link rel="stylesheet" href="/styles/habilidades.css" />
+    <link rel="stylesheet" href="/styles/cursos.css" />
+    <link rel="stylesheet" href="/styles/contacto.css" />
+    <link rel="stylesheet" href="/styles/popup.css" />
+  </head>
+  <body>
+    <!-- Aqui va el encabezado -->
+    <header id="header-section">
+      <!-- Logo -->
+      <div id="logo">
+        <a href="#main-section">
+          <img src="/images/jimmy1.jpg" alt=""
+        /></a>
+        <a href="#main-section">
+          <p>Jimmy Martinez </p>
+          <p>{ Estudiante }</p>
+        </a>
+      </div>
+      <!-- Menu -->
+      <nav>
+        <ul>
+          <li><a href="#main-section">Perfil</a></li>
+          <li><a href="#timeline-section">Experiencia</a></li>
+          <li><a href="#habilidades-section">Habilidades</a></li>
+          <li><a href="#cursos-section">Cursos</a></li>
+          <li><a href="#contacto-section">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Icono de hamburguesa con lista de paginas -->
+      <div id="icn-hamburguesa" onclick="menu_hamburguesa(this)">
+        <!-- Icono -->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <!-- Menu -->
+        <ul class="mobile-menu">
+          <li><a href="#main-section">Perfil</a></li>
+          <li><a href="#timeline-section">Experiencia</a></li>
+          <li><a href="#habilidades-section">Habilidades</a></li>
+          <li><a href="#cursos-section">Cursos</a></li>
+          <li><a href="#contacto-section">Contacto</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Aqui va el contenido principal -->
+    <main id="main-section">
+      <section>
+        <h1>Hola, soy</h1>
+        <h1>Jimmy Martinez </h1>
+        <p>
+          Soy estudiante de la carrera de ingeniería en software cruezando el quinto semestre, desde pequeño
+          me gustó todo lo relacionado con la tecnologia ahora me deseo expecializar en creación de páginas web 
+          y trabajando como backend o tambien en la creacion de apps , gracias a la carrera de ingeniería donde estoy, 
+          he aprendido lenguajes de programación y desarrollo web que es lo que yo mas deseava .
+        
+        </p>
+        <button
+          type="submit"
+          onclick="window.open('/documents/CV.pdf')"
+        >
+          Descargar CV
+        </button>
+      </section>
+      <img
+        src="/images/jimmy2.JPEG"
+        alt="Foto de Jimmy en broklyn"
+      />
+    </main>
+
+    <!-- Timeline Experiencia -->
+    <section class="timeline" id="timeline-section">
+      <div class="title">
+        <h1>Experiencia</h1>
+      </div>
+      <div class="contenedor izquierdo">
+        <div class="date">"2020" -al- (2020)</div>
+        <!-- <i class="icon fa fa-home"></i> -->
+        <i class="icon fas fa-terminal"></i>
+        <div class="contenido">
+          <h2>Algoritmo y lógica de programación</h2>
+          <p>
+            Encargado de planear el proyecto. Este tuvo una duración
+            de 3 meses; entregando un software encargado de realizar ejercicios
+            matemáticos didacticos  como juegos para niños  usando python como ejemplo
+            tres en raya 
+          </p>
+        </div>
+      </div>
+      <div class="contenedor derecho">
+        <div class="date">"2020" -al- (2020)</div>
+        <i class="icon fab fa-uncharted"></i>
+        <div class="contenido">
+          <h2>Requerimientos de software</h2>
+          <p>
+            Recaudé la documentación del levantamiento de requerimientos y la
+            entrega del mismo al equipo de desarrollo.
+          </p>
+        </div>
+      </div>
+      <div class="contenedor izquierdo">
+        <div class="date">"2020" -al- (2021)</div>
+        <i class="icon fab fa-react"></i>
+        <div class="contenido">
+          <h2>Modelamiento de software</h2>
+          <p>
+            Desarrollo de página web a través del framework de diseño de
+            React.js
+          </p>
+        </div>
+      </div>
+      <div class="contenedor derecho">
+        <div class="date">"2021" -al- (2021)</div>
+        <i class="icon fas fa-laptop-code"></i>
+        <div class="contenido">
+          <h2>Programación orientada a objetos</h2>
+          <p>
+            Encargado de desarrollar los módulos de contabilidad para un
+            software de pago de roles en el "Tio  San" y comercial " Rosita"
+          </p>
+        </div>
+      </div>
+      <div class="contenedor izquierdo">
+        <div class="date">"2021" -al- (2021)</div>
+        <i class="icon fas fa-database"></i>
+        <div class="contenido">
+          <h2>Administración de base de datos</h2>
+          <p>
+            Encargado de la administración de la base de datos en empresa me fiesta 
+            "fiesta rental " en new york ,con la ayuda en la creacion de un sitio web
+          </p>
+        </div>
+      </div>
+      <div class="contenedor derecho">
+        <div class="date">"2021" -al- (2022)</div>
+        <i class="icon fas fa-network-wired"></i>
+        <div class="contenido">
+          <h2>segurida</h2>
+          <p>
+            Instalacion de  un sistema de segurida  en la  tieneda "Rosita "
+          </p>
+        </div>
+      </div>
+      <!-- Background Wave Arriba -->
+      <div class="custom-shape-divider-top">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 -20 1000 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <!-- Background Wave Abajo -->
+      <div class="custom-shape-divider-bottom">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 -20 1016 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="habilidades" id="habilidades-section">
+      <div class="title">
+        <h1>Habilidades</h1>
+      </div>
+      <div class="fila1">
+        <div><p>CSS</p></div>
+        <div><p>HTML</p></div>
+        <div><p>JavaScript</p></div>
+        <div><p>TypeScript</p></div>
+        <div><p>React.js</p></div>
+      </div>
+      <div class="fila2">
+        <div><p>RUBY</p></div>
+        <div><p>Express</p></div>
+        <div><p>Python</p></div>
+        <div><p>Django</p></div>
+        <div><p>Vbnet</p></div>
+      </div>
+      <div class="fila3">
+        <div><p>Istacion de  alarmas </p></div>
+        <div><p>Vfox</p></div>
+        <div><p>Mysql</p></div>
+        <div><p>Postgress</p></div>
+        <div><p>Ingles avanzado</p></div>
+      </div>
+      <div class="fila4">
+        <div class="item1"><p>Firebase</p></div>
+        <div class="item2"><p>Sql Server</p></div>
+        <div class="item3"><p>Genexus</p></div>
+      </div>
+    </section>
+
+    <!-- Cursos | Cards -->
+    <div class="cursos title" id="cursos-section">
+      <h1>Cursos</h1>
+    </div>
+    <section class="cursos-cards" id="cursos-cards-section">
+      <div class="card c1">
+        <div class="icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="info-descripcion">
+          <p>
+            HTML, siglas en inglés de HyperText Markup Language, hace referencia
+            al lenguaje de marcado para la elaboración de páginas web.
+          </p>
+          <div class="button-cards">
+            <a href="https://www.youtube.com/watch?v=MJkdaVFHrto">¡Tomar curso!</a>
+          </div>
+          <!-- <input type="button" /> -->
+        </div>
+      </div>
+      <div class="card c2">
+        <div class="icon">
+          <i class="fab fa-css3"></i>
+        </div>
+        <div class="info-descripcion">
+          <p>
+            CSS, en español «Hojas de estilo en cascada», es un lenguaje de
+            diseño gráfico para definir y crear la presentación de un documento
+            estructurado escrito en un lenguaje de marcado.
+          </p>
+          <div class="button-cards">
+            <a href="https://www.youtube.com/watch?v=wZniZEbPAzk">¡Tomar curso!</a>
+          </div>
+        </div>
+      </div>
+      <div class="card c3">
+        <div class="icon">
+          <i class="fab fa-js-square"></i>
+        </div>
+        <div class="info-descripcion">
+          <p>
+            JavaScript es un lenguaje de programación interpretado, dialecto del
+            estándar ECMAScript. Se define como orientado a objetos, basado en
+            prototipos, imperativo, débilmente tipado y dinámico.
+          </p>
+          <div class="button-cards">
+            <a href="https://www.youtube.com/watch?v=RqQ1d1qEWlE">¡Tomar curso!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Windows | Popup -->
+    <div class="modal-container" id="modal_container">
+      <div class="modal">
+        <img
+          src="/images/jimmy1.jpg"
+          alt="Foto de Jimmy Martinez de perfil"
+        />
+        <h1>Gracias por su inscripcion, le<br />saluda Jimmy Martinez</h1>
+        <label id="name-show"></label>
+        <span>, revisé su correo -></span>
+        <label id="email-show"></label>
+        <span> para confirmar su registro, gracias por su comentario -></span>
+        <label id="message-show"></label>
+        <span> Todo OK.</span>
+        <br />
+        <button id="close">Close me</button>
+      </div>
+    </div>
+    <!-- Contacto -->
+    <section class="contacto" id="contacto-section">
+      <div class="contenedor-cont izquierdo">
+        <h1>Contacto</h1>
+        <h2>Dirección:</h2>
+        <p>Milagro, Ecuador</p>
+        <h2>Email:</h2>
+        <p>jmartinezb3@unemi.edu.ec</p>
+        <p>Deje su mensaje que con gusto le responderé.</p>
+        <div>🛁 🧙‍♂️ 🥋 🦄</div>
+      </div>
+      <form class="contenedor-cont derecho" id="form_cont">
+        <ul>
+          <li>
+            <label for="name">Nombres</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Ingresa tus nombres aquí"
+            />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Ingresa tu correo electrónico aquí"
+            />
+          </li>
+          <li>
+            <label for="phone">Telefono</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Ingresa tu telefono aquí"
+            />
+          </li>
+          <li>
+            <label for="message">Mensaje</label>
+            <textarea
+              rows="6"
+              id="message"
+              placeholder="Ingresa tu mensaje aquí"
+            ></textarea>
+          </li>
+          <li>
+            <input
+              type="submit"
+              id="submit_form"
+              onclick="envio_form()"
+              value="Enviar Formulario"
+            />
+          </li>
+        </ul>
+      </form>
+    </section>
+  </body>
+  <script src="/scripts/script.js"></script>
+</html>

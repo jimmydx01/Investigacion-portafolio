@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+.modal-container {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	top: 0px;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+	z-index: 3;
+}
+.modal-container.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+.modal {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgb(0, 0, 0);
+	padding: 30px 50px;
+	margin-top: 70px;
+	text-align: center;
+	width: 600px;
+	max-width: 100%;
+    z-index: 3;
+}
+.modal h1 {
+	margin: 0;
+}
+.modal p {
+	opacity: 0.8;
+}
+.modal img {
+    height: 300px;
+    border-radius: 10px;
+	margin-bottom: 20px;
+}
+.modal-container button {
+	font-weight: bold;
+	margin-top: 20px;
+	border-radius: 20px;
+	padding: 8px 40px;
+	color: #ffffff;
+	background-color: #c84b31;
+}

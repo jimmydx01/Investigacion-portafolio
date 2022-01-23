@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/* Timeline */
+.timeline {
+  display: grid;
+  position: relative;
+  width: 100%;
+  padding: 130px 0px 0px 0px;
+  background: #2d4263;
+}
+.timeline .title {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 10px 0px;
+}
+.timeline h1 {
+  width: max-content;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 5px;
+  background-color: #2d4263;
+  z-index: 1;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to top, #ffffff, rgba(0, 0, 0, 0)) 0.8%;
+}
+/* Linea del Timeline */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: #ffffff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+/* Contenedores */
+.contenedor {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+.contenedor.izquierdo {
+  left: 0;
+}
+.contenedor.derecho {
+  left: 50%;
+}
+/* Dibujo del circulo para cada contenedor */
+.contenedor::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #2d4263;
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  z-index: 1;
+}
+/* Posicionamiento en el eje x | Contenedor derecho */
+.contenedor.derecho::after {
+  left: -8px;
+}
+.contenedor::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #ffffff;
+  z-index: 1;
+}
+/* Linea que se dirige al circulo | Contenedor derecho */
+.contenedor.derecho::before {
+  left: 8px;
+}
+/* Fechas contenedores */
+.contenedor .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 20px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+/* Posicionamiento de la fecha | Contenedor izquierdo */
+.contenedor.izquierdo .date {
+  right: -75px;
+  inline-size: 56px;
+  min-height: 60px;
+}
+/* Posicionamiento de la fecha | Contenedor derecho */
+.contenedor.derecho .date {
+  left: -75px;
+  inline-size: 56px;
+  min-height: 60px;
+}
+/* Dibujo de circulo que contiene icono de los contenedores */
+.contenedor .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  z-index: 1;
+  background-color: #2d4263;
+}
+/* Posicionamiento de circulo izquierdo que contiene icono de los contenedores */
+.contenedor.izquierdo .icon {
+  right: 56px;
+}
+/* Posicionamiento de circulo derecho que contiene icono de los contenedores */
+.contenedor.derecho .icon {
+  left: 56px;
+}
+/* Contenedor que encierra el titulo y parrafo */
+.contenedor .contenido {
+  padding: 30px 90px 30px 30px;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+/* Estilos del contenido del contenedor */
+.contenedor.derecho .contenido {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+.contenedor .contenido h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.contenedor .contenido p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #94c246;
+}
+/* Background Waves Top */
+.custom-shape-divider-top {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  transform: rotate(180deg);
+}
+.custom-shape-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 123px;
+}
+.custom-shape-divider-top .shape-fill {
+  fill: #ffffff;
+}
+/* Background Waves Bottom */
+.custom-shape-divider-bottom {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.custom-shape-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 123px;
+}
+.custom-shape-divider-bottom .shape-fill {
+  fill: #ffffff;
+}
+
+/* Queries */
+/* Mobile */
+@media (max-width: 728px) {
+  /* Background Waves Top */
+  .custom-shape-divider-top {
+    top: 0px;
+  }
+  /* Eliminar linea centrica */
+  .timeline::after {
+    left: 90px;
+    display: none;
+  }
+  .contenedor {
+    width: 100%;
+    padding: 15px 0px;
+  }
+  .contenedor.derecho {
+    left: 0%;
+  }
+  /* Eliminar circulo centrico de cada contenedor */
+  .contenedor.izquierdo::after,
+  .contenedor.derecho::after {
+    display: none;
+  }
+  /* Eliminar linea que conduce al icono */
+  .contenedor.izquierdo::before,
+  .contenedor.derecho::before {
+    display: none;
+  }
+  /* Fechas */
+  .contenedor.izquierdo .date,
+  .contenedor.derecho .date {
+    top: 40%;
+    right: auto;
+    left: 15px;
+  }
+  /* Eliminar Iconos */
+  .contenedor.izquierdo .icon,
+  .contenedor.derecho .icon {
+    display: none;
+  }
+  /* Contenido de contenedores */
+  .contenedor.izquierdo .contenido,
+  .contenedor.derecho .contenido {
+    padding: 30px 30px 30px 90px;
+  }
+}
+@media (max-width: 400px) {
+  .timeline h1 {
+    font-size: 35px;
+  }
+  
+}

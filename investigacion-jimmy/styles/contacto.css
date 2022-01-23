@@ -1,0 +1,123 @@
+.contacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font: normal 16px "Fira Sans", "Helvetica Neue", sans-serif;
+  background: #1d1f1d;
+  color: #fff;
+  padding: 50px 0;
+}
+/* Contenedor Izquierdo estilos */
+.contenedor-cont.izquierdo {
+  text-align: center;
+}
+.contenedor-cont.izquierdo h1 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.contenedor-cont.izquierdo h2 {
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 18px;
+}
+.contenedor-cont.izquierdo p {
+  padding-bottom: 16px;
+}
+.contenedor-cont.izquierdo div {
+  font-size: 26px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 44px;
+}
+/* Contenedor derecho */
+.contenedor-cont.derecho ul {
+  list-style-type: none;
+  padding: 0;
+}
+.contenedor-cont.derecho ul {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* Listas del contenedor */
+.contenedor-cont.derecho ul li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* Margen inferior de cada lista del contenedor */
+.contenedor-cont.derecho ul > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+/* Todas las labels del contenedor derecho */
+.contenedor-cont.derecho ul li label,
+.contenedor-cont.derecho ul li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+/* Responsive flex labels del contenedor */
+.contenedor-cont.derecho ul > li > label,
+.contenedor-cont.derecho ul li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+/* Ancho de los labels e inputs */
+.contenedor-cont.derecho ul > li > label + * {
+  flex: 1 0 220px;
+}
+/* padding a excepcion de los inputs del contenedor derecho */
+.contenedor-cont.derecho ul li input:not([type="checkbox"]),
+.contenedor-cont.derecho ul li textarea {
+  padding: 12px;
+  border: none;
+}
+.contenedor-cont.derecho ul li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #2d4263;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+/* Queries */
+@media screen and (max-width: 730px) {
+  .contacto {
+    flex-direction: column;
+  }
+  .contenedor-cont.izquierdo {
+    margin-bottom: 30px;
+  }
+  .contenedor-cont.derecho ul li button {
+    width: 100%;
+    border-radius: 30px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contacto {
+    font-size: 12px;
+  }
+  .contenedor-cont.izquierdo h1 {
+    font-size: 30px;
+  }
+  .contenedor-cont.izquierdo h2 {
+    font-size: 20px;
+  }
+  .contenedor-cont.izquierdo div {
+    font-size: 20px;
+  }
+  .contenedor-cont.derecho ul > li > label + * {
+    flex: 0.5 0 220px;
+    margin-left: 10px;
+  }
+  .contenedor-cont.derecho ul li label,
+  .contenedor-cont.derecho ul li p {
+    margin-left: 18px;
+  }
+}

@@ -1,0 +1,13 @@
+/* Ajuste global de la barra */
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+/* Fondo de la barra */
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.411);
+}
+/* Barra frontal */
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10px;
+}
